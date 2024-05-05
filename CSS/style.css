@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.header.main-contents-header {
+.main-contents-header {
   display: flex;
   justify-content: space-between;
 }
@@ -16,4 +16,9 @@
 
 .main-contents-nav-item {
   margin: 0 30px;
+}
+
+.main-contents-icon {
+  display: flex;
+  justify-content: center;
 }
