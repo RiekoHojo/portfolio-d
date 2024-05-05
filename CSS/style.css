@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.header.main-contents-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-contents-logo {
+  width: 60px;
+}
+
+.main-contents-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.main-contents-nav-item {
+  margin: 0 30px;
+}
