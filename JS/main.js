@@ -1,1 +1,1 @@
-script
+/*slick slide*/

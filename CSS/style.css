@@ -1,8 +1,15 @@
 @charset "UTF-8";
 
 .main-contents-header {
+  height: 85px;
+  background-color: aqua;
+}
+
+.main-contents-header-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
 }
 
 .main-contents-logo {
@@ -12,6 +19,7 @@
 .main-contents-nav {
   display: flex;
   justify-content: center;
+  margin: 20px 20px;
 }
 
 .main-contents-nav-item {
@@ -21,4 +29,76 @@
 .main-contents-icon {
   display: flex;
   justify-content: center;
+}
+
+.main-contents-iconimg {
+  max-width: 100%;
+}
+
+.main-contents-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-contents-main-top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.topimg {
+  height: 500px;
+  object-fit: cover;
+}
+
+/*slider*/
+.slider {
+  position: relative;
+}
+
+.slider-item01 {
+  background:url(../images/top1.png);
+}
+
+.slider-item02 {
+  background:url(../images/top2.png);
+}
+
+.slider-item03 {
+  background:url(../images/top3.png);
+}
+
+.slider .topimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+/*sliderナビスクエア*/
+.slick-dots {
+  position: relative;
+  z-index: 3;
+  margin: -20px auto;
+  text-align: center;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 40px;
+  height: 4px;
+  display: block;
+  background: #fff;
+}
+
+.slick-dots .slick-active button {
+  background-color: #fff;
+  border: 1px solid #fff;
 }
