@@ -1,11 +1,14 @@
 /*slick slide*/
-$(".slider").slick({
-    autoplay: true,
+var $slide = $(".slider")
+  .slick({
+    fade: true,
+    speed: 1200,
     autoplaySpeed: 3000,
-    speed:1000,
-    infinite: true,
+    arrows: false,
+    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    infinite: true,
     dots: true,
     arrows: false,
-});
+  });

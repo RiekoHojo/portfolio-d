@@ -47,9 +47,19 @@
   width: 100%;
 }
 
+.main-contents-main-topimg {
+  height: 600px;
+}
+
 .topimg {
   height: 500px;
   object-fit: cover;
+}
+
+.main-contents-wrapbox {
+  height: 500px;
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 
 /*slider*/
@@ -75,13 +85,14 @@
   background-position: center;
   height: 600px;
 }
+/*slider*/
 
 /*sliderナビスクエア*/
 .slick-dots {
   position: relative;
-  z-index: 3;
-  margin: -20px auto;
+  margin: -40px auto;
   text-align: center;
+  z-index: 3;
 }
 
 .slick-dots li {
@@ -91,14 +102,66 @@
 
 .slick-dots button {
   color: transparent;
-  outline: none;
+  outline: 1px solid white;
   width: 40px;
   height: 4px;
   display: block;
-  background: #fff;
+  background: transparent;
 }
 
 .slick-dots .slick-active button {
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: #c8dce6;
+  outline: 1px solid #c8dce6;
+}
+/*sliderナビスクエア*/
+
+.main-contents-wrapblock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-contents-wrapblock:not(:last-child) {
+  margin-bottom: 100px;
+}
+
+.main-contents-img {
+  display: block;
+  width: 50%;
+}
+
+.main-contents-textbox {
+  width: 50%;
+}
+
+.main-contents-textinnerbox {
+  max-width: 470px;
+  margin-right: auto;
+  padding-left: 78px;
+}
+
+.textbox-btn {
+  width: 220px;
+  color: #000;
+  font-size: 15px;
+  text-align: center;
+  background-color: #FFF;
+  display: block;
+  outline: 1px solid #000;
+  line-height: 40px;
+}
+
+.main-contents-wrap.news {
+  background-color: aqua;
+  padding: 56px 0;
+  margin-top: 150px;
+}
+
+.main-contents-wrapbox {
+  height: 125px;
+}
+
+.main-contents-wrapinnerbox {
+  width: 1086px;
+  margin: 0 auto;
 }
