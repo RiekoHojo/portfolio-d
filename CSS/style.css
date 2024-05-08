@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*header*/
 .main-contents-header {
   height: 85px;
   background-color: aqua;
@@ -34,7 +35,9 @@
 .main-contents-iconimg {
   max-width: 100%;
 }
+/*header*/
 
+/*メインコンテンツ*/
 .main-contents-main {
   display: flex;
   flex-direction: column;
@@ -55,11 +58,14 @@
   height: 500px;
   object-fit: cover;
 }
+/*メインコンテンツ*/
+
 
 .main-contents-wrapbox {
   height: 500px;
   margin-top: 80px;
   margin-bottom: 20px;
+  background-color: palevioletred;
 }
 
 /*slider*/
@@ -157,11 +163,67 @@
   margin-top: 150px;
 }
 
-.main-contents-wrapbox {
-  height: 125px;
-}
-
 .main-contents-wrapinnerbox {
   width: 1086px;
   margin: 0 auto;
+}
+
+.main-contents-wrapbox.Ficon {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-contents-footer-icon {
+  width: 120px;
+}
+
+.footer-icon-img {
+  width: 95px;
+}
+
+.footer-icon-title,
+.footer-icon-text {
+  text-align: center;
+}
+
+.footer-contents-box {
+  height: 470px;
+  text-align: center;
+  padding: 40px 0px;
+  background-color:#c8dce6;
+}
+
+.footer-contents-boxinner {
+  margin-bottom: 70px;
+}
+
+.footer-contents-img {
+  width: 150px;
+}
+
+.footer-contents-nav {
+  margin-bottom: 50px;
+}
+
+.footer-contents-nav ,
+.footer-contents-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-contents-nav li,
+.footer-contents-nav a {
+  margin: 0px 10px 10px 0px;
+}
+
+.footer-contents-icon li {
+  margin: 0px 50px 50px 0px;
+}
+
+.footer-contents-icon img {
+  width: 40px;
 }
