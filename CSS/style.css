@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
+/*全体*/
+ html {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 95.9;
+}
+
+h3,h5,p {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /*header*/
 .main-contents-header {
   height: 85px;
@@ -60,12 +77,21 @@
 }
 /*メインコンテンツ*/
 
-
 .main-contents-wrapbox.slick {
   height: 500px;
   margin-top: 80px;
   margin-bottom: 20px;
   background-color: palevioletred;
+}
+
+.main-contents-box {
+  margin-bottom: 49px;
+}
+
+.main-contents-imgbox {
+  margin: 0 0 0 auto;
+  width: calc(50% + 544px);
+  display: block;
 }
 
 /*slider*/
@@ -158,9 +184,45 @@
 }
 
 .main-contents-wrap.news {
+  height: 340px;
   background-color: aqua;
   padding: 56px 0;
   margin-top: 150px;
+}
+
+.main-contents-wrapbox.news {
+  width: 1086px;
+  margin: 0 auto;
+}
+
+.main-contents-wrapinnerbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-contents-wrapinnerbox .main-contents-newsbox li p {
+  background:url(../images/news_icon.png) no-repeat right center/7px;
+}
+
+.main-contents-newsbox {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 176px);
+}
+
+.main-contents-newsboxinner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.main-contents-wrapinnerbtn {
+  text-align: right;
+}
+
+.main-contents-wrapinnerbtn a {
+  background:url(../images/news_icon.png) no-repeat right center/7px;
 }
 
 .main-contents-wrapbox.category {
@@ -207,14 +269,17 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  margin: 80px 0px;
 }
 
 .main-contents-footer-icon {
   width: 120px;
+  margin-right: 60px;
 }
 
 .footer-icon-img {
   width: 95px;
+  margin-bottom: 10px;
 }
 
 .footer-icon-title,
@@ -255,9 +320,9 @@
 }
 
 .footer-contents-icon li {
-  margin: 0px 50px 50px 0px;
+  margin: 0px 60px 50px 0px;
 }
 
 .footer-contents-icon img {
-  width: 40px;
+  width: 35px;
 }
