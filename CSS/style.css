@@ -10,7 +10,8 @@
     "wdth" 95.9;
 }
 
-h3,h5,p {
+h3,h5,p,address,
+.footer-contents-nav {
   font-family: "Zen Kaku Gothic Antique", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -20,14 +21,32 @@ h3,h5,p {
 /*header*/
 .main-contents-header {
   height: 85px;
-  background-color: aqua;
+  background-color: #c8dce6;
 }
 
 .main-contents-header-box {
+  max-width: 1325px;
+  height: 85px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 20px;
+  margin: 0 auto;
+}
+
+.main-contents-header-boxinner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.main-contents-header,.main-contents-header-box,.main-contents-header-boxinner {
+  /*padding-right: 14px;*/
+  box-sizing: border-box;
+  /*justify-content: flex-end;
+  width: calc(100% - 100px);*/
 }
 
 .main-contents-logo {
@@ -37,20 +56,25 @@ h3,h5,p {
 .main-contents-nav {
   display: flex;
   justify-content: center;
-  margin: 20px 20px;
 }
 
 .main-contents-nav-item {
-  margin: 0 30px;
+  margin: 0 0 0 60px;
+}
+
+.main-contents-nav-item a {
+  white-space: nowrap;
 }
 
 .main-contents-icon {
   display: flex;
   justify-content: center;
+  margin-left: 50px;
 }
 
 .main-contents-iconimg {
-  max-width: 100%;
+  max-width: 25px;
+  margin-right: 25px;
 }
 /*header*/
 
@@ -320,9 +344,12 @@ h3,h5,p {
 }
 
 .footer-contents-icon li {
-  margin: 0px 60px 50px 0px;
+  margin: 0px 30px 40px 30px;
 }
 
 .footer-contents-icon img {
   width: 35px;
+}
+
+@media (max-width: 896px) {
 }
