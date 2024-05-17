@@ -39,7 +39,6 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 .main-contents-header,.main-contents-header-box,.main-contents-header-boxinner {
@@ -76,6 +75,11 @@
   max-width: 25px;
   margin-right: 25px;
 }
+
+.main-contents-hamburger {
+  display: none;
+}
+
 /*header*/
 
 /*メインコンテンツ*/
@@ -203,6 +207,7 @@
   max-width: 470px;
   margin-right: auto;
   padding-left: 78px;
+  max-width: 470px;
 }
 
 .textbox-btn {
@@ -375,5 +380,89 @@
 }
 
 @media (max-width: 896px) {
-
+  .main-contents-nav {
+    display: none;
+  }
+  .main-contents-hamburger {
+    padding-left: 50px;
+  }
+  .main-contents-hamburger {
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    height: 20px;
+    width: 20px;
+    right: 30px;
+    transform: translateX(0);
+  }
+  .main-contents-hamburgericon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+    right: 30px;
+    z-index: 100;
+    transition: all .5s;
+  }
+  .main-contents-hamburgericon.active {
+    transform: translateX(30px);
+  }
+  .main-contents-hamburgericon span {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    transition: all .5s;
+  }
+  .main-contents-hamburgericon span:nth-of-type(1) {
+    top: 3px; 
+  }
+  .main-contents-hamburgericon span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .main-contents-hamburgericon span:nth-of-type(3) {
+    bottom: 3px;
+  }
+  .main-contents-hamburgericon.active span:nth-of-type(1),
+  .main-contents-hamburgericon.active span:nth-of-type(3) {
+    top: 9px; 
+    transform: rotate(45deg);
+  }
+  .main-contents-hamburgericon.active span:nth-of-type(3) {
+    transform: rotate(-45deg);
+  }
+  .main-contents-hamburgericon.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  /*header*/
+  .main-contents-wrapblock {
+    margin: 0 22px 53px;
+    display: block;
+  }
+  .main-contents-img {
+    width: 100%;
+    display: block;
+  }
+  .main-contents-textbox {
+    width: auto;
+  }
+  .main-contents-wrapblock {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-contents-wrapblock:nth-child(2) .main-contents-img {
+    order: 1;
+  }
+  .main-contents-wrapblock:nth-child(2) .main-contents-textbox {
+    order: 2;
+  }
 }
