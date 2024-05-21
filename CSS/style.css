@@ -451,6 +451,34 @@
     opacity: 0;
   }
   /*header*/
+  /*downbox*/
+  .down-box {
+    padding: 35px 30px 57px;
+    background-color: #f3f4f4f5;
+    z-index: -5;
+  }
+  .down-box>.down-boxinner>.linkbox>ul {
+    width: 34.3%;
+  }
+  .down-box>.down-boxinner>.linkbox>ul>li {
+    margin-bottom: 34px;
+  }
+  .down-box>.down-boxinner>.linkbox>ul>li a {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    letter-spacing: 0.07em;
+    font-weight: 700;
+  }
+  .down-boxinner {
+    width: 1086px;
+    margin: 0 auto;
+  }
+  .linkbox.flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /*downbox*/
   /*main*/
   .main-contents-wrapblock {
     margin: 0 22px 53px;
