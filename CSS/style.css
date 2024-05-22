@@ -79,8 +79,83 @@
 .main-contents-hamburger {
   display: none;
 }
-
 /*header*/
+
+/*downbox*/
+/*.down-box {
+  transform: translateY(17%) scale(1);
+}*/
+.down-box.show {
+  /*transform: translateY(100%) scale(1);*/
+  padding: 35px 50px 57px;
+  background-color: #f3f4f4f5;
+  z-index: -5;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  margin-top: 85px;
+}
+
+.down-box.down-boxinner.linkbox>ul>li {
+  margin-bottom: 34px;
+}
+
+.down-box.down-boxinner.linkbox>ul>li a {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+}
+
+.down-boxinner {
+  margin: 0 150px;
+}
+
+.linkbox.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.linkbox.flex li {
+  margin-bottom: 34px;
+}
+
+.linkboxineer {
+  width: 33.3%;
+}
+
+.linkboxineer li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.linkboxineer.center {
+}
+
+.down-icon {
+  width: 45px;
+  display: flex;
+  align-items: center;
+  margin: -3px 16px 0 0;
+  vertical-align: middle;
+}
+
+.down-navi {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0 0 32px;
+}
+
+.down-navi li {
+  padding: 8px 0;
+  align-items: center;
+  letter-spacing: .07em;
+}
+/*downbox*/
 
 /*メインコンテンツ*/
 .main-contents-main {
@@ -127,7 +202,7 @@
   position: relative;
 }
 
-.slider-item01 {
+/*.slider-item01 {
   background:url(../images/top1.png);
 }
 
@@ -137,7 +212,7 @@
 
 .slider-item03 {
   background:url(../images/top3.png);
-}
+}*/
 
 .slider .topimg {
   background-repeat: no-repeat;
@@ -451,34 +526,6 @@
     opacity: 0;
   }
   /*header*/
-  /*downbox*/
-  .down-box {
-    padding: 35px 30px 57px;
-    background-color: #f3f4f4f5;
-    z-index: -5;
-  }
-  .down-box>.down-boxinner>.linkbox>ul {
-    width: 34.3%;
-  }
-  .down-box>.down-boxinner>.linkbox>ul>li {
-    margin-bottom: 34px;
-  }
-  .down-box>.down-boxinner>.linkbox>ul>li a {
-    display: flex;
-    align-items: center;
-    font-size: 1.3rem;
-    letter-spacing: 0.07em;
-    font-weight: 700;
-  }
-  .down-boxinner {
-    width: 1086px;
-    margin: 0 auto;
-  }
-  .linkbox.flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  /*downbox*/
   /*main*/
   .main-contents-wrapblock {
     margin: 0 22px 53px;
